@@ -1,0 +1,8 @@
+version: "3.9"
+
+services:
+  prefect-flow:
+    build: ./prefect
+    volumes:
+      - ./shared:/opt/project/shared
+    network_mode: bridge
